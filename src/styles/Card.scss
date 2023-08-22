@@ -1,0 +1,65 @@
+.card-list {
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  //   background-image: linear-gradient(
+  //     to right,
+  //     #00adb5,
+  //     #b83b5e,
+  //     #393e46,
+  //     #6a2c70
+  //   );
+}
+
+.skill-header {
+  padding-top: 30px;
+  font-size: 2.5rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid yellow;
+  width: fit-content;
+  margin: auto;
+}
+
+.card-x {
+  padding: 50px;
+  flex-basis: calc(28.33% - 20px);
+  height: 400px;
+  border: 2px dotted rgb(78, 30, 69);
+  margin: 20px;
+  border-radius: 10%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .card-desc {
+    font-size: 1.26rem;
+    color: #555555;
+    text-align: center;
+    justify-content: center;
+    font-family: "Caveat", cursive;
+  }
+}
