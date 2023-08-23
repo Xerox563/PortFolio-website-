@@ -1,6 +1,17 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
+   
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      delay: 200,
+      easing: "linear",
+      once: false,
+    });
+  });
   return (
     <nav>
       <NavContent />
@@ -10,14 +21,14 @@ const Header = () => {
 
 const NavContent = () => (
   <>
-    <h2>Xerox </h2>
-    <div>
+    <h2 data-aos="flip-right">Xerox </h2>
+    <div data-aos="fade-down" delay="200">
       <a href="#home">Home</a>
-      <a href="#word">Word</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#services">Services</a>
-      <a href="#testimonial">Testimonial</a>
-      <a href="#contact">Contact</a>
+      <a href="#word">Work</a>
+      <a href="#timeline">Services</a>
+      <a href="#services">About</a>
+      <a href="#testimonial">Contact</a>
+     
     </div>
     <a href="mailto:gangwaramit449@gmail.com">
       <button>Email</button>

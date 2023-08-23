@@ -21,6 +21,7 @@ nav {
       font-weight: 500;
       transition: all 0.3s;
       letter-spacing: 1px;
+      text-decoration: none;
       &:hover {
         color: $color3;
       }
@@ -36,9 +37,11 @@ nav {
     letter-spacing: 1px;
     font-weight: 500;
     transition: all 0.3s;
+    text-decoration: none !important;
     &:hover {
       background-color: $color6;
       color: $color4;
+      text-decoration: none;
     }
   }
 }
@@ -55,9 +58,11 @@ nav {
   top: 2rem;
   right: 2rem;
   display: none;
+  text-decoration: none;
 
   &:hover {
     color: $color3;
+    text-decoration: none;
   }
 }
 
