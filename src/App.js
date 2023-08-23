@@ -6,6 +6,8 @@ import Card from "./components/Card";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Testimonial from "./components/Testimonial";
+
 const App = () => {
   return (
     <>
@@ -14,7 +16,7 @@ const App = () => {
       <Work />
       <About />
       <Card />
-  
+      <Testimonial />
       <Contact />
       <Footer />
     </>

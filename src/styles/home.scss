@@ -158,7 +158,34 @@
 }
 
 #cv {
-  
   padding: 13px;
-  background-color: $color3 ;
+  background-color: $color3;
+}
+
+// Media Query
+@media (max-width: 768px) {
+  #home {
+    /* Adjust styles for smaller screens */
+    /* For example: */
+    #cv {
+      padding: 10px;
+    }
+    .ml1 {
+      font-size: 2em;
+    }
+  }
+}
+
+/* Media query for screens up to 480px width */
+@media (max-width: 480px) {
+  #home {
+    /* Further adjust styles for even smaller screens */
+    /* For example: */
+    #cv {
+      padding: 5px;
+    }
+    .ml1 {
+      font-size: 1.5em;
+    }
+  }
 }
